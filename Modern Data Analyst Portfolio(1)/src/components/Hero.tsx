@@ -149,7 +149,7 @@ export default function Hero() {
           >
             <div className="absolute inset-0 rounded-full blur-2xl transition-colors duration-500" style={{ background: 'var(--gradient-secondary)' }} />
             <ImageWithFallback
-              src="Gemini_Generated_Image_7o7xtu7o7xtu7o7x.png"
+              src="Screenshot 2025-11-14 at 09-04-33 (25) Amoin marie ange-estelle ACQUAYE LinkedIn.png"
               alt="Professional portrait"
               className="relative w-72 h-72 lg:w-96 lg:h-96 object-cover rounded-full shadow-2xl transition-all duration-500"
               style={{ borderWidth: '8px', borderColor: 'var(--bg-primary)', boxShadow: 'var(--shadow-lg)' }}
