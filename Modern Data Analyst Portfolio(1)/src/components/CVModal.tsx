@@ -1,7 +1,7 @@
 import { motion, AnimatePresence } from "motion/react";
 import { X, Download, ExternalLink } from "lucide-react";
 import { useLanguage } from "../contexts/LanguageContext";
-// import pdf from "../src/public/Amoin_ACQUAYE_Data_analyst_CV.pdf";
+import pdf from '../assets/Amoin_ACQUAYE_Data_analyst_CV.pdf';
 
 interface CVModalProps {
   isOpen: boolean;
@@ -16,7 +16,7 @@ export default function CVModal({ isOpen, onClose }: CVModalProps) {
 
   const handleDownload = () => {
     const link = document.createElement("a");
-    link.href = cvUrl;
+    link.href = pdf;
     link.download = "Amoin_Acquaye_CV.pdf";
     document.body.appendChild(link);
     link.click();
