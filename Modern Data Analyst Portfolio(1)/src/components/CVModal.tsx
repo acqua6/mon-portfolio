@@ -17,7 +17,7 @@ export default function CVModal({ isOpen, onClose }: CVModalProps) {
   const handleDownload = () => {
     const link = document.createElement("a");
     link.href = pdf;
-    link.download = "Amoin_Acquaye_CV.pdf";
+    link.download = "Amoin_ACQUAYE_Data_analyst_CV.pdf";
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
