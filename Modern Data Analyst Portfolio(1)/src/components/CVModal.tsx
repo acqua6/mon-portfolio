@@ -12,11 +12,11 @@ export default function CVModal({ isOpen, onClose }: CVModalProps) {
   const { t } = useLanguage();
 
   // Mock CV URL - remplacez cela par l'URL réelle de votre CV
-  const cvUrl = "/src/assets/Amoin_ACQUAYE_Data_analyst_CV.pdf";
+  const cvUrl = pdf;
 
   const handleDownload = () => {
     const link = document.createElement("a");
-    link.href = pdf;
+    link.href = cvUrl;
     link.download = "Amoin_ACQUAYE_Data_analyst_CV.pdf";
     document.body.appendChild(link);
     link.click();
