@@ -1,6 +1,7 @@
 import { motion, AnimatePresence } from "motion/react";
 import { X, Download, ExternalLink } from "lucide-react";
 import { useLanguage } from "../contexts/LanguageContext";
+// import pdf from "../src/public/Amoin_ACQUAYE_Data_analyst_CV.pdf";
 
 interface CVModalProps {
   isOpen: boolean;
@@ -11,7 +12,7 @@ export default function CVModal({ isOpen, onClose }: CVModalProps) {
   const { t } = useLanguage();
 
   // Mock CV URL - remplacez cela par l'URL réelle de votre CV
-  const cvUrl = "Amoin_ACQUAYE_Data_analyst_CV.pdf";
+  const cvUrl = 'Amoin_ACQUAYE_Data_analyst_CV.pdf';
 
   const handleDownload = () => {
     const link = document.createElement("a");
@@ -20,6 +21,8 @@ export default function CVModal({ isOpen, onClose }: CVModalProps) {
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
+    console.log(link);
+    
   };
 
   return (
